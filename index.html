@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Čertík's First Webpage</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Hello, I'm Čertík!</h1>
@@ -35,5 +34,87 @@
   <li>Build a portfolio website</li>
 </ol>
 <!-- 👉 “Today I Set up my first HTML Page and learned 6 Essential HTML Tags -->
+<a href="https://www.youtube.com/@CertikCat">Go to my YouTube channel</a>
+<ul>
+  <li>Yarn</li>
+  <li>Bowl</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+  <li>Tuna</li>
+</ul>
+<ol>
+  <li>Zoomies</li>
+  <li>Sunbathing</li>
+  <li>Eating</li>
+</ol>
+<img src="https://cdn.buymeacoffee.com/uploads/project_updates/7746915/2025/08/09/214310_1754775788818_20250712_072905.jpg.jpeg" alt="Another cute cat picture" style= "display:block; margin:auto; width: 120px; border-radius: 8px; border: 6px solid #555">
+<!-- 👉 “Today my first webpage got published on github and started learning CSS in Flexbox Froggy CSS tool -->
+<!--Today I connected CSS to my site and changed colors + text styles.-->
+<button id="greetBtn">Click me!</button>
+<button id="colorBtn">Change background</button>
+
+<script>
+    // Your JavaScript will go here
+    let myName = prompt("What is your name?");
+  if (myName === null) {
+    // Case 1: User clicked Cancel
+    alert("Hello, mysterious guest!");
+  } else if (myName === "") {
+    // Case 2: User left the input empty
+    alert("Hello, nameless one!");
+  } else {
+    // Case 3: User typed something
+    alert("Hello, " + myName + "! Welcome to my page.");
+  }
+
+// Find the button by its id
+const button = document.getElementById("greetBtn");
+
+// Define what happens when the button is clicked
+button.onclick = function() {
+  let name = prompt("What is your name?");
+      alert("Hello, " + name + "!");
+      button.textContent = "You clicked me!";
+      button.style.backgroundColor = "lightgreen";
+      button.style.color = "white";
+      button.style.fontSize = "24px";
+      button.style.padding = "15px 30px";
+};
+
+const colorBtn = document.getElementById("colorBtn");
+const colors = ["white", "lightblue", "lightgreen", "pink", "yellow"]; // list of colors
+let currentIndex = 0; // start at the first color (white)
+
+colorBtn.addEventListener("click", function () {
+      // Ask for the user's name
+      let name = prompt("What is your name?");
+
+      // Check if the user entered something
+      if (!name) {
+        name = "Stranger"; // default if empty or canceled
+      }
+
+      alert("Hello, " + name + "!");
+
+      // Cycle to the next background color
+      currentIndex = (currentIndex + 1) % colors.length;
+      document.body.style.backgroundColor = colors[currentIndex];
+    });
+/*
+Today I learned how to make a button interactive using JavaScript: it can greet the user, 
+cycle through background colors, 
+and dynamically change its text while handling empty input gracefully. 
+*/
+  </script>
 </body>
 </html>
+<!--Today I reinforced CSS skills by playing [Flexbox Froggy] and applied one new style to my page.-->
+<!--Today I learned how to use alert() and console.log() in JavaScript, and how the code executes line by line.-->
+<!--Today I learned how to add a button to my website and make it interactive-->
+
+
