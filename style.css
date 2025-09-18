@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+  font-size: 16px; /* base font size in pixels */
+  margin: 10px;
+  padding: 0;
+  background-color: #b52f2f;
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.6; /* adds spacing between lines */
+  color: #333;      /* a softer dark gray instead of pure black */
+}
+a {
+  color: darkblue;
+  text-decoration: none; /* removes underline */
+  border: 2px dashed black;
+ border-radius: 10px;   /* rounded corners */ 
+ padding: 5px;
+
+
+}
+
+a:hover {
+  text-decoration: underline; /* underline appears on hover */
+}
+ul {
+  display: flex;
+  justify-content: center; /* centers the items horizontally */
+  gap: 20px; /* space between items */
+  list-style: none; /* remove bullet points */
+  padding: 0; /* remove default padding */
+}
+img {
+  border: 3px solid black !important;
+}
+
+
+
+
